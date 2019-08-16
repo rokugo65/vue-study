@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vue Sample</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+  <div id="app">
+    <div class="container-fluid">
+      <table class="table table-bordered">
+        <colgroup>
+          <col width="50%">
+          <col width="50%">
+        </colgroup>
+        <thead>
+          <tr>
+            <th>Form</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="form-group mb-0">
+                <label>Text</label>
+                <input v-model="message" type="text" class="form-control">
+              </div>
+            </td>
+            <td>{{ message }}</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="form-group mb-0">
+                <label>Textarea</label>
+                <textarea v-model="description"
+                          class="form-control"></textarea>
+              </div>
+            </td>
+            <td><pre class="mb-0">{{ description }}</pre></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+<script src="../vue.js"></script>
+<script src="./app.js"></script>
+</html>

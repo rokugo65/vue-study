@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vue Sample</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+  <div id="app">
+    <div class="container-fluid">
+      <table class="table table-bordered">
+        <colgroup>
+          <col width="50%">
+          <col width="50%">
+        </colgroup>
+        <thead>
+          <tr>
+            <th>Form</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="form-group mb-0">
+                <label>Date</label>
+                <input v-model="birthday" type="date"
+                       class="form-control">
+              </div>
+            </td>
+            <td><pre class="mb-0">{{ birthday }}</pre></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="form-group mb-0">
+                <label>Range</label>
+                <input v-model="range" type="range"
+                       class="form-control" min="0" max="10">
+              </div>
+            </td>
+            <td>{{ '🍔'.repeat(range) }} ({{ range }})</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+<script src="../vue.js"></script>
+<script src="./app.js"></script>
+</html>

@@ -1,0 +1,18 @@
+.container {
+    padding: 1.2rem 2%;
+    text-align: center;
+}
+  
+input[type="date"] {
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    padding: .5rem;
+    width: 8rem;
+}
+  
+.message {
+    background: lightcyan;
+    border-radius: 4px;
+    padding: 1rem;
+}
+  

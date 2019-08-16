@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vue Sample</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+  <div id="app">
+    <div class="container">
+      <h1 class=title>Welcome to Vue</h1>
+      <p v-for="message in messages"
+         class="text"
+         :class="{ 'text-error': message.error }">
+        {{ message.text }}
+      </p>
+    </div>
+  </div>  
+</body>
+<script src="../vue.js"></script>
+<script src="./app.js"></script>
+</html>

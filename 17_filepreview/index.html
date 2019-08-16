@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vue Sample</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+  <div id="app">
+    <div class="container">
+      <h1>Vue.js Image Preview</h1>
+      <input type="file" @change="onFileChange" accept="image/*">
+      <output>
+        <img :src="previewUrl" v-if="previewUrl">
+        <p v-else>No image...</p>
+      </output>
+    </div>
+  </div>
+</body>
+<script src="../vue.js"></script>
+<script src="./app.js"></script>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vue Sample</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+  <div id="app">
+    <div class="container-fluid">
+      <table class="table table-bordered">
+        <colgroup>
+          <col width="50%">
+          <col width="50%">
+        </colgroup>
+        <thead>
+          <tr>
+            <th>Form</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="form-group mb-0">
+                <label>Radio</label>
+                <p class="mb-1">
+                  <input v-model="lang" type="radio" id="r1" value="js">
+                  <label for="r1">Good</label>
+                </p>
+                <p class="mb-1">
+                  <input v-model="lang" type="radio" id="r2" value="php">
+                  <label for="r2">PHP</label>
+                </p>
+                <p class="mb-0">
+                  <input v-model="lang" type="radio" id="r3" value="html">
+                  <label for="r3">HTML</label>
+                </p>
+              </div>
+            </td>
+            <td>{{ lang }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+</body>
+<script src="../vue.js"></script>
+<script src="./app.js"></script>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vue Sample</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+  <div id="app">
+    <button v-on:click="show=!show">切り替え</button>
+    <transition>
+      <p v-if="show">hello vue.js</p>
+    </transition>
+  </div>
+</body>
+<script src="../vue.js"></script>
+<script src="./app.js"></script>
+</html>

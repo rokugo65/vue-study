@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vue Sample</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    <div id="app">
+            <div class="container">
+            <h1>Welcome to Vue</h1>
+            <p class="notification" v-if="messages.count > 0">
+            You have {{ messages.count }} messages.
+            </p>
+            <p v-else>No messages.</p>
+        </div>
+    </div>
+</body>
+<script src="../vue.js"></script>
+<script src="./app.js"></script>
+</html>
+  

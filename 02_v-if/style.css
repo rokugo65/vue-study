@@ -1,0 +1,10 @@
+.container {
+    padding: .5rem 2%;
+}
+  
+.notification {
+    background: #0093E3;
+    border-radius: 4px;
+    color: white;
+    padding: 1rem;
+}

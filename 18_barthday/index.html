@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vue Sample</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+  <div id="app">
+    <div class="container">
+      
+      <label for="birthday">お誕生日は？</label>
+      <input type="date" id="birthday" v-model="birthday">
+      
+      <p v-if="age >= 0">{{ age }} 歳ですね！</p>
+      <p v-else>お誕生日を入力してください。</p>
+  
+      <p v-if="isComputedCalled" class="message">
+        Computedが呼び出されました。
+      </p>
+  
+    </div>
+  </div>  
+</body>
+<script src="../vue.js"></script>
+<script src="../moment.js"></script>
+<script src="./app.js"></script>
+</html>
